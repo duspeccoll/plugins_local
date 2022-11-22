@@ -22,7 +22,7 @@ class MARCModel < ASpaceExport::ExportModel
   # we don't use the ead_loc method because we use the PUI for "finding aids"
   @resource_map = {
     [:id_0, :id_1, :id_2, :id_3] => :handle_id,
-    [:id, :jsonmodel_type] => :handle_ark,
+    [:ark_name] => :handle_ark,
     :notes => :handle_notes
   }
 
